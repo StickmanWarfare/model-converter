@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 675
   Width = 542
   Height = 495
-  Caption = 'Stick Ligtmapper and Converter'
+  Caption = 'Stickman Warfare Model Converter and Ligtmapper'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

@@ -1,4 +1,4 @@
-program StickConvert;
+program ModelConverter;
 
 uses
   Forms,
@@ -8,7 +8,7 @@ uses
 
 begin
   Application.Initialize;
-  Application.Title := 'Stickman Converter';
+  Application.Title := 'Stickman Warfare Model Converter and Lightmapper';
   Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

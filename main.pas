@@ -4,7 +4,7 @@ interface
 
 uses
   Windows,Messages,SysUtils,Classes,Graphics,Controls,Forms,Dialogs,
-  StdCtrls,Direct3D9,D3DX9,typestuff,math,perlinnoise,ExtCtrls;
+  StdCtrls,Direct3D9,D3DX9,typestuff,math,ExtCtrls;
 
 type
   TForm1=class(TForm)
@@ -409,7 +409,6 @@ begin
   label1.caption:='Loading';
   repaint;
   randomize;
-  perlin:=Tperlinnoise.create(25);
   OD1.Execute;
   fil:=OD1.FileName;
 
@@ -841,7 +840,7 @@ i:integer;
 begin
 if (lang = LANG_HUNGARIAN) then
   begin
-    Form1.Caption := 'Stick Lightmap generáló és Konverter';
+    Form1.Caption := 'Stick Warfare Modell Konverter és Lightmap generáló';
     Form1.resg.Caption := 'Felbontás';
     Form1.jpgchk.Caption := 'JPG textúrák';
     Form1.kellLMchk.Caption := 'Nem kérek lightmapot';
@@ -850,7 +849,7 @@ if (lang = LANG_HUNGARIAN) then
   end
   else
   begin
-    Form1.Caption := 'Stick Lightmapper and Converter';
+    Form1.Caption := 'Stickman Warfare Model Converter and Lightmapper';
     Form1.resg.Caption := 'Resolution';
     Form1.jpgchk.Caption := 'JPG textures';
     Form1.kellLMchk.Caption := 'Don''t generate lightmap';
